@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+    background-color: rgba(247, 237, 101, 0.959);
+    color: rgba(40, 211, 117, 0.959);
+}
+
+.container {
+    max-width: 100%;
+    /* margin: 0 auto; */
+}
+
+.nav-bar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    height: 7rem;
+    align-items: center;
+    box-shadow: 0px 1px 10px 3px #ccc;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bar a {
+    color: #222;
+    text-decoration: none;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu ul li{
+    list-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #222;
+}
+
+.menu-items:hover {
+    color: rgba(40, 211, 117, 0.959);
+}
+
+.menu .active {
+    border-radius: 5px;
+    color: #222;
+    background-color: rgba(40, 211, 117, 0.959);
+    padding: 5px;
+}
+
+.social-icon img {
+    width: 30px;
+    padding: 0px 5px;
+    cursor: pointer;
+    filter: opacity(70%)
+}
+
+#banner-post {
+    color: #fff;
+    height: 45em;
+    background-image: url(https://livedemo00.template-help.com/wt_prod-10492/theme/images/slide-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#banner-post h3, h1, h2 {
+    padding: 15px 0;
+}
+
+#banner-post button {
+    margin-top: 15px;
+    padding: 20px 35px;
+    font-weight: bolder;
+    background-color: rgba(247, 237, 101, 0.959);
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#banner-post button:hover {
+    color: #fff;
+    background-color: rgba(40, 211, 117, 0.959);
+}
+
+.about-content {
+    text-align: center;
+    height: 33rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 100px;
+}
+
+.about-post h3, h1, p {
+    width: 400px;
+    padding: 15px 0;
+    text-align: left;
+}
