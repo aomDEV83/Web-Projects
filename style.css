@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Teko', sans-serif;
+}
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth !important;
 }
 
 ::selection {
@@ -12,18 +19,20 @@
 
 .container {
     max-width: 100%;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .nav-bar {
     background-color: #fff;
     display: flex;
     justify-content: space-around;
-    height: 7rem;
+    height: 8rem;
     align-items: center;
     box-shadow: 0px 1px 10px 3px #ccc;
     position: fixed;
     width: 100%;
+    font-size: 30px;
+    z-index: 9;
 }
 
 .nav-bar a {
@@ -40,10 +49,11 @@
 .nav-menu ul li{
     list-style: none;
     font-weight: bold;
-    cursor: pointer;
+    font-size: 20px;
     display: flex;
     align-items: center;
     color: #222;
+    transition: .3s;
 }
 
 .menu-items:hover {
@@ -54,20 +64,25 @@
     border-radius: 5px;
     color: #222;
     background-color: rgba(40, 211, 117, 0.959);
-    padding: 5px;
+    padding: 0 20px;
 }
 
-.social-icon img {
-    width: 30px;
+.social-icon i {
+    font-size: 1.5rem;
     padding: 0px 5px;
     cursor: pointer;
-    filter: opacity(70%)
+    color: #222;
+    transition: .3s;
+}
+
+.social-icon i:hover {
+    color: rgba(40, 211, 117, 0.959);
 }
 
 #banner-post {
     color: #fff;
-    height: 45em;
-    background-image: url(https://livedemo00.template-help.com/wt_prod-10492/theme/images/slide-1.jpg);
+    height: 45rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -87,6 +102,8 @@
     margin-top: 15px;
     padding: 20px 35px;
     font-weight: bolder;
+    font-size: 20px;
+    color: #222;
     background-color: rgba(247, 237, 101, 0.959);
     border: none;
     border-radius: 5px;
@@ -94,13 +111,13 @@
 }
 
 #banner-post button:hover {
-    color: #fff;
+    color: #fafafa;
     background-color: rgba(40, 211, 117, 0.959);
 }
 
 .about-content {
     text-align: center;
-    height: 33rem;
+    height: 40rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -112,3 +129,497 @@
     padding: 15px 0;
     text-align: left;
 }
+
+.service {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://cdn.pixabay.com/photo/2020/06/21/16/07/the-planting-of-the-lettuce-5325653_1280.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 40rem;
+    align-items: center;
+}
+
+.service-items {
+    color: #fff;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.service-items h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.service-items p {
+    font-size: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.products -content {
+    background: #fafafa;
+}
+
+.head-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-products p {
+    color: rgb(76, 167, 76);
+    font-size: 2rem;
+    padding-top: 9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.head-products h1 {
+    color: #222;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.card-products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0 2rem;
+    padding: 5% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-items {
+    background-color: #fff;
+    box-shadow: 0 0 10px #ddd;
+    width: 20rem;
+    height: 85%;
+    margin: 3rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+    transition: ease-in 0.2s;
+}
+
+.products-items:hover {
+    background-color: rgba(247, 237, 101, 0.959);
+    transform: scale(1.1)
+}
+
+.products-items img {
+    width: 80%;
+    margin: 30px auto;
+    height: 180px;
+}
+
+.products-items h3 {
+    font-size: 2rem;
+    color: #222;
+}
+
+.products-items p {
+    color: rgb(76, 167, 76);
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 100%;
+}
+
+.products-items p s {
+    color: #666;
+    padding-right: 10px;
+}
+
+.products-items button {
+    cursor: pointer;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 0;
+    background-color: rgba(40, 211, 117, 0.959);
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    transition: ease-out .2s;
+    /* opacity: 0; */
+}
+
+.products-items button:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #222;
+}
+
+/* .products-items:hover button {
+    opacity: 100%;
+} */
+
+.head-our {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-our p {
+    color: rgb(76, 167, 76);
+    font-size: 2rem;
+    padding-top: 9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.head-our h1 {
+    color: #222;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+
+.card-review {
+    background-color: #fff;
+    color: rgba(40, 211, 117, 0.959);
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+    justify-content: center;
+    height: 20rem;
+    box-shadow: 0 0 10px #ccc;
+    transition: .3s;
+}
+
+.card-review:hover {
+    transform: translate(2px);
+    width: 30%;
+}
+
+.card-review p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.user-review {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 20rem;
+    position: relative;
+}
+
+.user-review img {
+    margin-right: 10px;
+}
+
+.user-review h3 {
+    color: #222;
+    width: 6rem;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.user-review p {
+    color: rgb(76, 167, 76);
+    width: 6rem;
+    text-align: center;
+    height: 2rem;
+    position: absolute;
+    top: 20px;
+}
+
+.our-team {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-team p {
+    color: rgb(76, 167, 76);
+    font-size: 2rem;
+    padding-top: 9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.our-team h1 {
+    color: #222;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.img-team {
+    background-color: #fafafa;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+}
+
+.img-team img {
+    margin: 0 auto;
+    
+}
+
+.team-contact-1 {
+    background-color: #fff;
+    position: absolute;
+    top: 280px;
+    width: 250px;
+    border-radius: 10px;
+    left: 150px;
+    opacity: 0;
+    transition: ease-out .2s;
+}
+
+
+.team-contact-1 p {
+    color: #222;
+    width: 100%;
+    text-align: center;
+}
+
+.team-contact-1 h3 {
+    color: rgb(76, 167, 76);
+    text-align: center;
+    width: 100%;
+}
+
+.team-contact-2 {
+    background-color: #fff;
+    position: absolute;
+    top: 280px;
+    width: 250px;
+    border-radius: 10px;
+    left: 600px;
+    opacity: 0;
+    transition: ease-out .2s;
+}
+
+.team-contact-2 p {
+    color: #222;
+    width: 100%;
+    text-align: center;
+}
+
+.team-contact-2 h3 {
+    color: rgb(76, 167, 76);
+    text-align: center;
+    width: 100%;
+}
+
+.team-contact-3 {
+    background-color: #fff;
+    position: absolute;
+    top: 280px;
+    width: 250px;
+    border-radius: 10px;
+    left: 1050px;
+    opacity: 0;
+    transition: ease-out .2s;
+}
+
+.team-contact-3 p {
+    color: #222;
+    width: 100%;
+    text-align: center;
+}
+
+.team-contact-3 h3 {
+    color: rgb(76, 167, 76);
+    text-align: center;
+    width: 100%;
+}
+
+.team-contact-4 {
+    background-color: #fff;
+    position: absolute;
+    top: 280px;
+    width: 250px;
+    border-radius: 10px;
+    left: 1500px;
+    opacity: 0;
+    transition: ease-out .2s;
+}
+
+.team-contact-4 p {
+    color: #222;
+    width: 100%;
+    text-align: center;
+}
+
+.team-contact-4 h3 {
+    color: rgb(76, 167, 76);
+    text-align: center;
+    width: 100%;
+}
+
+.team-contact-1:hover, .team-contact-2:hover, .team-contact-3:hover, .team-contact-4:hover {
+    opacity: 100%;
+}
+
+.our-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-blog p {
+    color: rgb(76, 167, 76);
+    font-size: 2rem;
+    padding-top: 9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.our-blog h1 {
+    color: #222;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.content-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+}
+
+.post-blog {
+    padding: 0 15px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog h1 {
+    color: #222;
+    text-align: center;
+}
+
+.blog p {
+    color: #ccc;
+    font-size: 20px;
+    text-align: center;
+}
+
+.subscrib {
+    background-color: #fafafa;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call  {
+    margin-right: 10rem;
+    width: 25rem;
+    padding-left: 10px;
+}
+
+.call h1 a {
+    color: #222;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.call > p {
+    font-size: 1.2rem;
+    line-height: 1px;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+
+.call-social {
+    margin-top: 10px;
+}
+
+.call-social p {
+    display: inline;
+    font-size: 1.1rem;
+    margin-right: 2.6rem;
+}
+
+.call-social i {
+    padding: 0 5px;
+    font-size: 1.2rem;
+}
+
+.call-social i:nth-last-child(1):hover {
+    color: rgba(40, 211, 117, 0.959);
+}
+
+.call-social i:nth-last-child(2):hover {
+    color: rgba(211, 66, 40, 0.959);
+}
+
+.call-social i:nth-last-child(3):hover {
+    color: rgba(53, 162, 252, 0.959);
+}
+
+.call-social i:nth-last-child(4):hover {
+    color: rgba(31, 82, 224, 0.959);
+}
+
+.address {
+    max-width: 40rem;
+    padding-left: 10px;
+}
+
+.address h1 {
+    font-size: 3rem;
+    color: #222;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    line-height: 1.2px;
+}
+
+.contact i {
+    font-size: 1.2rem;
+    margin-right: 1.1rem;
+}
+
+.contact i:hover {
+    color: rgba(40, 211, 117, 0.959);
+}
+
+.contact p {
+    font-size: 1.2rem;
+    display: inline;
+}
+
+.copyright {
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ccc;
+} 
